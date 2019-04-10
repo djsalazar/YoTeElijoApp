@@ -1,5 +1,7 @@
 {
   "name": "votos",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
