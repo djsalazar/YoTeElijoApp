@@ -1,0 +1,52 @@
+.card{
+      width: 90% !important;
+      height: 40% !important;
+      
+      //overflow: auto;
+      margin: auto !important; 
+      position: absolute !important;
+      top: 0; left: 0; bottom: 0; right: 0 !important;
+}
+
+wizard-layout-2 {
+  [header-slider] {
+    height: 100%;
+    background-size: 100% 60% !important;
+    background-position: top !important;
+    background-color: theme-colors('mainColors', 'primaryBase');
+  }
+  // Wizard Title
+  [wizard-title] {
+    color: color($wizardPage, wizard-title-big-image);
+  }
+  // Wizard Subtitle
+  [wizard-subtitle] {
+    color: color($wizardPage, wizard-title-big-image);
+  }
+  // Wizard Description
+  [wizard-description] {
+    color: color($wizardPage, wizard-title-big-image);
+  }
+
+  .slide-zoom {
+    width: calc(100% - 40px);
+    height: 100%;
+    position: relative;
+
+    [background-size] {
+      border-radius: 10px;
+      position: absolute;
+      bottom: 10%;
+      width: 100%;
+    }
+  }
+
+  // Settings Pagination
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 20px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: theme-colors('mainColors', 'accentBase');
+  }
+}
