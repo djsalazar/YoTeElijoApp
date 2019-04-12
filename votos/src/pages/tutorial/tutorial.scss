@@ -1,11 +1,16 @@
 .card{
       width: 90% !important;
-      height: 40% !important;
+      height: 80% !important;
       
       //overflow: auto;
       margin: auto !important; 
-      position: absolute !important;
-      top: 0; left: 0; bottom: 0; right: 0 !important;
+
+      background-color: #ffffff;
+      background-image: url(../../assets/imgs/fondos/fondo1.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      
 }
 
 wizard-layout-2 {
@@ -49,4 +54,28 @@ wizard-layout-2 {
   .swiper-pagination-bullet-active {
     background: theme-colors('mainColors', 'accentBase');
   }
+}
+
+.fondo {
+  background-color: #ffffff;
+  background-image: url(../../assets/imgs/fondos/logo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content-card {
+  padding-top: 40% !important; 
+}
+
+
+
+@media (min-width: 700px) {
+  .content-card {
+    padding-top: 300px !important; 
+  }
+  .fondo {
+    background-size: 60%;
+  }
+
 }
