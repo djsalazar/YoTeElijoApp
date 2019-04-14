@@ -1,0 +1,131 @@
+.fondoregistro {
+    background-image: url('../../assets/imgs/background/399.jpg');
+}
+.letra{
+    font-size: 17px !important;
+    font-weight:bold; 
+}
+.boxshadow{
+    box-shadow: 2px 2px 2px #f53d3d;
+}
+
+.b-input{
+    background: #ffffff;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 3px rgba(100, 100, 100, 0.5); 
+}
+
+[has-header] .scroll-content {
+    top: 0px;
+}
+
+.lugar {
+    text-align: right;
+}
+
+ion-item .item-inner {
+   border-bottom: 0px !important;
+}
+
+ion-item {
+   border-bottom: 0px !important;
+}
+
+
+
+.item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    border-bottom-color: #f53d3d;
+    -webkit-box-shadow: inset 0 0px 0 0 #f53d3d;
+    box-shadow: inset 0 0px 0 0 #f53d3d;
+}
+
+register-layout-1 {
+  [background-size] {
+    position: relative;
+  }
+
+  .scroll-content {
+    padding-bottom: 0 !important;
+
+    ion-grid {
+      height: 100%;
+
+      ion-row {
+        height: 100%;
+
+        img {
+          max-width: 170px;
+          max-height: 40px;
+          margin-bottom: 10px;
+        }
+        // Title
+        [register-title] {
+          color: color($register, register-logo-title);
+        }
+
+        form {
+          ion-item {
+            padding-left: 0 !important;
+            padding-bottom: 15px !important;
+
+            [error-field] {
+              margin: 0 !important;
+              position: absolute !important;
+              bottom: 0 !important;
+              right: 5px !important;
+              font-size: $h6-font-size;
+            }
+
+            .item-inner {
+              border-bottom: none !important;
+              box-shadow: none !important;
+              padding-right: 0 !important;
+            }
+
+            ion-label {
+              margin: 0 5px !important;
+            }
+
+            ion-input {
+              background: theme-colors('mainColors', 'primaryBase') !important;
+              box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1) !important;
+              margin: 5px 10px 15px 10px !important;
+              padding: 5px 10px !important;
+              width: calc(100% - 9px);
+              border-radius: 24px;
+              z-index: 999;
+
+              .input-cover {
+                display: none;
+              }
+            }
+          }
+
+          [stacked] {
+            font-size: $text-font-size !important;
+          }
+
+          .item-label-stacked ion-datetime {
+            background: theme-colors('mainColors', 'primaryBase') !important;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1) !important;
+            margin: 5px 10px 15px 10px !important;
+            padding: 5px 10px !important;
+            width: calc(100% - 9px);
+            border-radius: 24px;
+            z-index: 999;
+          }
+
+          .datetime-text {
+            color: theme-colors('textColors', 'accent');
+            margin: 8px 0;
+          }
+
+          .datetime-md .datetime-placeholder {
+            color: theme-colors('textColors', 'secondary') !important;
+          }
+        }
+      }
+    }
+  }
+}

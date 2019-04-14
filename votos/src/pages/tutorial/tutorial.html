@@ -1,7 +1,8 @@
 <ion-content class="fondo">
-    <ion-slides class="content-card" #wizardSlider pager="true" header-slider background-size>
+    <!--------------------------------#slides sirve para que podamos hacer eventos con los slides-->
+    <ion-slides class="content-card" #slides pager="true" header-slider background-size>
 
-        <ion-slide  >
+        <ion-slide >
             <div class="card" background-size box-shadow padding>
                 <p padding-top no-margin wizard-subtitle>Bienvenido</p>
                 <!--Wizard Title-->
@@ -9,7 +10,7 @@
                 <!--Wizard Description-->
                 <p padding-horizontal wizard-description>Guatemala celebra en el 2019 elecciones a nivel nacional.</p>
                 <!--Button section-->
-                <button ion-button default-button text-capitalize>
+                <button (click)="next()" ion-button default-button text-capitalize> 
                     Siguiente
                 </button>
             </div>
@@ -24,7 +25,7 @@
             <p padding-horizontal wizard-description>Como jovenes debemos conocer los perfiles e historial de los
                 candidatos para tomar una mejor decisión</p>
             <!--Button section-->
-            <button ion-button default-button text-capitalize>
+            <button (click)="next()" ion-button default-button text-capitalize>
                 Siguiente
             </button>
         </div>
@@ -38,7 +39,7 @@
             <p padding-horizontal wizard-description>Es una plataforma para jovenes de democratización de acceso a
                 información de los candidatos locales</p>
             <!--Button section-->
-            <button ion-button default-button text-capitalize>
+            <button (click)="vistaregistro()" ion-button default-button text-capitalize >
                 Entrá
             </button>
         </div>
