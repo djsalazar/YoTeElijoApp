@@ -15,6 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RegistroPage {
 
+  imageURI: any;
+  imageFileName: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
